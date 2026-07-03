@@ -1,0 +1,217 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Typography System
+   ========================================================================== */
+
+/* ==========================================================================
+   BODY
+   ========================================================================== */
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-normal);
+    color: var(--color-text);
+}
+
+/* ==========================================================================
+   HEADINGS
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    letter-spacing: -0.03em;
+}
+
+/* ==========================================================================
+   DISPLAY
+   ========================================================================== */
+
+.display-xl {
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-extrabold);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.display-lg {
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-extrabold);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+/* ==========================================================================
+   HEADINGS
+   ========================================================================== */
+
+h1 {
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-extrabold);
+}
+
+h2 {
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-bold);
+}
+
+h3 {
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-bold);
+}
+
+h4 {
+    font-size: var(--text-2xl);
+    font-weight: var(--weight-semibold);
+}
+
+h5 {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-semibold);
+}
+
+h6 {
+    font-size: var(--text-lg);
+    font-weight: var(--weight-semibold);
+}
+
+/* ==========================================================================
+   PARAGRAPHS
+   ========================================================================== */
+
+p {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+/* ==========================================================================
+   LEAD TEXT
+   ========================================================================== */
+
+.lead {
+    font-size: var(--text-xl);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    max-width: 700px;
+}
+
+/* ==========================================================================
+   SMALL TEXT
+   ========================================================================== */
+
+.small {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.caption {
+    font-size: var(--text-xs);
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+/* ==========================================================================
+   LABELS
+   ========================================================================== */
+
+.label {
+    display: inline-block;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+a {
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* ==========================================================================
+   TEXT HELPERS
+   ========================================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+/* ==========================================================================
+   FONT WEIGHTS
+   ========================================================================== */
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+/* ==========================================================================
+   MAX WIDTH
+   ========================================================================== */
+
+.measure {
+    max-width: 65ch;
+}
