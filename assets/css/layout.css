@@ -1,0 +1,236 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Layout System
+   ========================================================================== */
+
+/* ==========================================================================
+   CONTAINER
+   ========================================================================== */
+
+.container {
+
+    width: min(100% - 2rem, var(--container-xl));
+
+    margin-inline: auto;
+
+}
+
+/* ==========================================================================
+   SECTION
+   ========================================================================== */
+
+.section {
+
+    padding-block: var(--space-10);
+
+}
+
+.section-sm {
+
+    padding-block: var(--space-8);
+
+}
+
+.section-lg {
+
+    padding-block: calc(var(--space-10) * 1.5);
+
+}
+
+/* ==========================================================================
+   GRID
+   ========================================================================== */
+
+.grid {
+
+    display: grid;
+
+}
+
+.grid-2 {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: var(--space-7);
+
+}
+
+.grid-3 {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-6);
+
+}
+
+.grid-4 {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: var(--space-5);
+
+}
+
+/* ==========================================================================
+   FLEX
+   ========================================================================== */
+
+.flex {
+
+    display: flex;
+
+}
+
+.items-center {
+
+    align-items: center;
+
+}
+
+.justify-between {
+
+    justify-content: space-between;
+
+}
+
+.justify-center {
+
+    justify-content: center;
+
+}
+
+.flex-column {
+
+    flex-direction: column;
+
+}
+
+.flex-wrap {
+
+    flex-wrap: wrap;
+
+}
+
+.gap-sm {
+
+    gap: var(--space-3);
+
+}
+
+.gap {
+
+    gap: var(--space-5);
+
+}
+
+.gap-lg {
+
+    gap: var(--space-7);
+
+}
+
+/* ==========================================================================
+   WIDTH
+   ========================================================================== */
+
+.w-full {
+
+    width: 100%;
+
+}
+
+/* ==========================================================================
+   TEXT
+   ========================================================================== */
+
+.text-center {
+
+    text-align: center;
+
+}
+
+/* ==========================================================================
+   SPACING
+   ========================================================================== */
+
+.mt-sm {
+
+    margin-top: var(--space-3);
+
+}
+
+.mt {
+
+    margin-top: var(--space-5);
+
+}
+
+.mt-lg {
+
+    margin-top: var(--space-8);
+
+}
+
+.mb-sm {
+
+    margin-bottom: var(--space-3);
+
+}
+
+.mb {
+
+    margin-bottom: var(--space-5);
+
+}
+
+.mb-lg {
+
+    margin-bottom: var(--space-8);
+
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width:992px){
+
+    .grid-4{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .grid-3{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .grid-2,
+
+    .grid-3,
+
+    .grid-4{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section{
+
+        padding-block:var(--space-8);
+
+    }
+
+}
