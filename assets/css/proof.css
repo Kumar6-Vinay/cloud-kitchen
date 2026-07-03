@@ -1,0 +1,195 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Kitchen Proof
+   ========================================================================== */
+
+.proof {
+
+    padding-block: var(--space-9);
+
+    background: var(--color-surface-secondary);
+
+}
+
+.proof-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: var(--space-8);
+
+    align-items: center;
+
+}
+
+.proof-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: var(--space-4);
+}
+
+.proof-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-3);
+}
+
+.proof-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-3);
+
+    color: var(--color-text-secondary);
+
+    font-weight: var(--weight-medium);
+}
+
+.proof-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 24px;
+
+    height: 24px;
+
+    border-radius: var(--radius-pill);
+
+    background: rgba(22,163,74,.12);
+
+    color: var(--color-success);
+
+    font-size: var(--text-xs);
+}
+
+/* ==========================================================================
+   KITCHEN STATUS
+   ========================================================================== */
+
+.kitchen-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-3);
+
+    padding: var(--space-3) var(--space-5);
+
+    border-radius: var(--radius-pill);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-sm);
+
+    font-size: var(--text-sm);
+
+    font-weight: var(--weight-semibold);
+}
+
+.status-dot {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--color-text-light);
+}
+
+.status-dot.is-open {
+
+    background: var(--color-success);
+}
+
+.status-dot.is-closed {
+
+    background: var(--color-text-light);
+}
+
+/* ==========================================================================
+   STATS
+   ========================================================================== */
+
+.proof-stats {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: var(--space-5);
+}
+
+.proof-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding: var(--space-6);
+
+    border-radius: var(--radius-lg);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-sm);
+
+    text-align: center;
+}
+
+.proof-stat-value {
+
+    font-family: var(--font-heading);
+
+    font-size: var(--text-3xl);
+
+    font-weight: var(--weight-extrabold);
+
+    color: var(--color-primary);
+}
+
+.proof-stat-label {
+
+    font-size: var(--text-xs);
+
+    color: var(--color-text-muted);
+
+    text-transform: uppercase;
+
+    letter-spacing: .06em;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width:768px) {
+
+    .proof-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .proof-content {
+
+        align-items: center;
+
+        text-align: center;
+    }
+}

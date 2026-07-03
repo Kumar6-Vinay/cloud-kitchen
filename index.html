@@ -1,91 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Kota Factory — Fresh Meals, Delivered Every Day</title>
+<meta name="description" content="Home-style thalis delivered daily to Kota's coaching hostels and PGs. Subscription plans, daily specials, and hygienic FSSAI-certified kitchens.">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
 <header class="site-header">
 
 <nav class="navbar">
-
 <div class="container">
 
 <a href="/" class="logo">
-
-<div class="logo-mark">
-
-TKF
-
-</div>
-
+<div class="logo-mark">TKF</div>
 <div class="logo-text">
-
-<span class="logo-title">
-
-The Kota Factory
-
-</span>
-
-<span class="logo-subtitle">
-
-Fresh Meals. Every Day.
-
-</span>
-
+<span class="logo-title">The Kota Factory</span>
+<span class="logo-subtitle">Fresh Meals. Every Day.</span>
 </div>
-
 </a>
 
-<div class="nav-menu">
-
-<a href="#featured-meals" class="nav-link">
-
-Menu
-
-</a>
-
-<a href="#subscription" class="nav-link">
-
-Plans
-
-</a>
-
-<a href="#reviews" class="nav-link">
-
-Reviews
-
-</a>
-
-<a href="#faq" class="nav-link">
-
-FAQ
-
-</a>
-
+<div class="nav-menu" id="nav-menu">
+<a href="#featured-meals" class="nav-link">Menu</a>
+<a href="#subscription" class="nav-link">Plans</a>
+<a href="#reviews" class="nav-link">Reviews</a>
+<a href="#faq" class="nav-link">FAQ</a>
 </div>
 
 <div class="nav-actions">
-
-<a href="#featured-meals"
-
-class="btn btn-secondary">
-
-Today's Menu
-
-</a>
-
-<a href="#"
-
-class="btn btn-primary">
-
-Order Now
-
-</a>
-
-<button class="mobile-toggle">
-
-☰
-
+<a href="#featured-meals" class="btn btn-secondary">Today's Menu</a>
+<a href="#subscription" class="btn btn-primary">Order Now</a>
+<button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+<span class="mobile-toggle-bar" aria-hidden="true"></span>
 </button>
-
 </div>
 
 </div>
-
 </nav>
 
 </header>
+
+<main id="main-content">
+
+<!-- ==========================================================================
+     HERO
+     ========================================================================== -->
+
+<section class="hero" id="hero">
+<div class="container hero-grid">
+
+<div class="hero-content reveal">
+<span class="label">Fresh Meals. Every Day.</span>
+<h1 class="display-xl">Home-style thalis, delivered hot to your Kota PG.</h1>
+<p class="lead">No more skipped meals during revision marathons. Subscribe once and get fresh, hygienically-cooked thalis delivered to your hostel or PG — on time, every time.</p>
+
+<div class="hero-actions">
+<a href="#featured-meals" class="btn btn-primary btn-lg">See Today's Menu</a>
+<a href="#subscription" class="btn btn-outline btn-lg">View Plans</a>
+</div>
+
+<div class="hero-stats">
+<div class="hero-stat">
+<span class="hero-stat-value">4.8★</span>
+<span class="hero-stat-label">Student Rating</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-value">10K+</span>
+<span class="hero-stat-label">Meals / Month</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-value">6</span>
+<span class="hero-stat-label">Kota Zones</span>
+</div>
+</div>
+</div>
+
+<div class="hero-illustration reveal">
+<div class="hero-blob" aria-hidden="true"></div>
+
+<span class="hero-badge hero-badge--rating">⭐ 4.8 rated by students</span>
+<span class="hero-badge hero-badge--special">🔥 Today's Special inside</span>
+
+<div class="thali-wrap">
+<svg class="thali" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a steel thali with dal, sabzi, pickle, roti and steaming rice">
+<defs>
+<radialGradient id="steelPlate" cx="35%" cy="30%" r="75%">
+<stop offset="0%" stop-color="var(--color-steel-light)" />
+<stop offset="100%" stop-color="var(--color-steel)" />
+</radialGradient>
+<radialGradient id="steelKatori" cx="35%" cy="30%" r="75%">
+<stop offset="0%" stop-color="var(--color-steel-light)" />
+<stop offset="100%" stop-color="var(--color-steel-dark)" />
+</radialGradient>
+</defs>
+
+<circle class="thali-rim" cx="200" cy="200" r="185" fill="url(#steelPlate)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle class="thali-base" cx="200" cy="200" r="160" fill="var(--color-steel-light)" opacity=".6" />
+
+<ellipse class="thali-rice" cx="200" cy="215" rx="70" ry="52" fill="var(--color-rice)" stroke="var(--color-steel)" stroke-width="1" />
+<path d="M175,195 q10,-14 20,0" fill="none" stroke="var(--color-steel)" stroke-width="2" stroke-linecap="round" opacity=".5" />
+<path d="M200,190 q10,-14 20,0" fill="none" stroke="var(--color-steel)" stroke-width="2" stroke-linecap="round" opacity=".5" />
+<path d="M190,205 q10,-14 20,0" fill="none" stroke="var(--color-steel)" stroke-width="2" stroke-linecap="round" opacity=".4" />
+
+<circle class="thali-katori" cx="120" cy="120" r="42" fill="url(#steelKatori)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle class="thali-katori-content" cx="120" cy="120" r="30" fill="var(--color-dal)" />
+
+<circle class="thali-katori" cx="280" cy="120" r="42" fill="url(#steelKatori)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle class="thali-katori-content" cx="280" cy="120" r="30" fill="var(--color-sabzi)" />
+
+<circle class="thali-katori" cx="90" cy="270" r="30" fill="url(#steelKatori)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle class="thali-katori-content" cx="90" cy="270" r="20" fill="var(--color-pickle)" />
+
+<g class="thali-roti">
+<ellipse cx="300" cy="285" rx="46" ry="14" fill="var(--color-roti)" stroke="var(--color-steel-dark)" stroke-width="1.5" />
+<ellipse cx="300" cy="277" rx="46" ry="14" fill="var(--color-roti)" stroke="var(--color-steel-dark)" stroke-width="1.5" />
+<ellipse cx="300" cy="269" rx="46" ry="14" fill="var(--color-roti)" stroke="var(--color-steel-dark)" stroke-width="1.5" />
+</g>
+
+<g class="thali-steam" transform="translate(200,150)">
+<path class="steam-line" d="M-14,40 C -24,20 -4,10 -14,-10" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M0,45 C -10,25 10,15 0,-5" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,40 C 4,20 24,10 14,-10" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ==========================================================================
+     TODAY'S SPECIAL
+     ========================================================================== -->
+
+<section class="special" id="special" data-special>
+<div class="container">
+<div class="special-card reveal">
+
+<div class="special-media">
+<span class="special-badge">Today's Special</span>
+<svg class="thali thali--small" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of today's special steel thali">
+<defs>
+<radialGradient id="steelPlateSmall" cx="35%" cy="30%" r="75%">
+<stop offset="0%" stop-color="var(--color-steel-light)" />
+<stop offset="100%" stop-color="var(--color-steel)" />
+</radialGradient>
+<radialGradient id="steelKatoriSmall" cx="35%" cy="30%" r="75%">
+<stop offset="0%" stop-color="var(--color-steel-light)" />
+<stop offset="100%" stop-color="var(--color-steel-dark)" />
+</radialGradient>
+</defs>
+<circle cx="200" cy="200" r="185" fill="url(#steelPlateSmall)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle cx="200" cy="200" r="160" fill="var(--color-steel-light)" opacity=".6" />
+<ellipse cx="200" cy="215" rx="70" ry="52" fill="var(--color-rice)" stroke="var(--color-steel)" stroke-width="1" />
+<circle cx="120" cy="120" r="42" fill="url(#steelKatoriSmall)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle cx="120" cy="120" r="30" fill="var(--color-dal)" />
+<circle cx="280" cy="120" r="42" fill="url(#steelKatoriSmall)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle cx="280" cy="120" r="30" fill="var(--color-sabzi)" />
+<circle cx="90" cy="270" r="30" fill="url(#steelKatoriSmall)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<circle cx="90" cy="270" r="20" fill="var(--color-pickle)" />
+<g class="thali-roti">
+<ellipse cx="300" cy="285" rx="46" ry="14" fill="var(--color-roti)" stroke="var(--color-steel-dark)" stroke-width="1.5" />
+<ellipse cx="300" cy="277" rx="46" ry="14" fill="var(--color-roti)" stroke="var(--color-steel-dark)" stroke-width="1.5" />
+<ellipse cx="300" cy="269" rx="46" ry="14" fill="var(--color-roti)" stroke="var(--color-steel-dark)" stroke-width="1.5" />
+</g>
+<g class="thali-steam" transform="translate(200,150)">
+<path class="steam-line" d="M-14,40 C -24,20 -4,10 -14,-10" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M0,45 C -10,25 10,15 0,-5" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,40 C 4,20 24,10 14,-10" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+
+<div class="special-body">
+<span class="label">Chef's Pick</span>
+<h2 class="special-title" data-special-name>Loading today's special…</h2>
+<p class="special-description" data-special-description>Fetching the freshest pick for today.</p>
+
+<div class="special-meta">
+<span class="card-price" data-special-price>₹—</span>
+
+<div class="countdown" aria-live="polite">
+<span class="countdown-label">Order closes in</span>
+<div class="countdown-timer">
+<span class="countdown-unit"><span class="countdown-value" data-countdown-hours>00</span><span class="countdown-caption">hrs</span></span>
+<span class="countdown-sep">:</span>
+<span class="countdown-unit"><span class="countdown-value" data-countdown-minutes>00</span><span class="countdown-caption">min</span></span>
+<span class="countdown-sep">:</span>
+<span class="countdown-unit"><span class="countdown-value" data-countdown-seconds>00</span><span class="countdown-caption">sec</span></span>
+</div>
+</div>
+</div>
+
+<button class="btn btn-accent btn-lg" type="button" data-add-special>Add to Cart</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ==========================================================================
+     FEATURED MEALS
+     ========================================================================== -->
+
+<section class="menu-section" id="featured-meals" data-menu>
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">Menu</span>
+<h2>Today's Favourites</h2>
+<p class="lead">Rotating thalis and bowls cooked fresh every day — filter by what your body needs.</p>
+</div>
+
+<div class="menu-filters reveal" role="group" aria-label="Filter meals by category">
+<button class="chip is-active" type="button" data-filter="all">All</button>
+<button class="chip" type="button" data-filter="veg">Veg</button>
+<button class="chip" type="button" data-filter="non-veg">Non-Veg</button>
+<button class="chip" type="button" data-filter="high-protein">High Protein</button>
+<button class="chip" type="button" data-filter="light">Light</button>
+</div>
+
+<div class="grid grid-3" data-menu-grid>
+
+<article class="card menu-card reveal" data-category="veg high-protein">
+<div class="card-image card-image--veg">
+<svg class="meal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M15,45 a35,35 0 0 0 70,0 z" fill="var(--color-steel-light)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<ellipse cx="50" cy="45" rx="35" ry="8" fill="var(--color-steel)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<g class="thali-steam" transform="translate(50,35)">
+<path class="steam-line" d="M-10,25 C -18,10 -2,2 -10,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M2,28 C -6,13 10,5 2,-9" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,25 C 6,10 22,2 14,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+<span class="card-badge">Bestseller</span>
+<div class="card-body">
+<h3 class="card-title">Paneer Butter Masala Thali</h3>
+<p class="card-description">Creamy paneer curry, jeera rice, roti, salad and pickle.</p>
+<div class="card-tags">
+<span class="card-tag">Veg</span>
+<span class="card-tag">High Protein</span>
+</div>
+<div class="card-meta">
+<span>420 kcal</span>
+<span>25 min</span>
+</div>
+<div class="card-footer">
+<span class="card-price">₹159</span>
+<button class="btn btn-primary btn-sm" type="button" data-add-to-cart data-id="meal-paneer-thali" data-name="Paneer Butter Masala Thali" data-price="159">Add</button>
+</div>
+</div>
+</article>
+
+<article class="card menu-card reveal" data-category="non-veg high-protein">
+<div class="card-image card-image--non-veg">
+<svg class="meal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M15,45 a35,35 0 0 0 70,0 z" fill="var(--color-steel-light)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<ellipse cx="50" cy="45" rx="35" ry="8" fill="var(--color-steel)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<g class="thali-steam" transform="translate(50,35)">
+<path class="steam-line" d="M-10,25 C -18,10 -2,2 -10,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M2,28 C -6,13 10,5 2,-9" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,25 C 6,10 22,2 14,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+<span class="card-badge">High Protein</span>
+<div class="card-body">
+<h3 class="card-title">Chicken Curry Thali</h3>
+<p class="card-description">Home-style chicken curry, jeera rice, roti and salad.</p>
+<div class="card-tags">
+<span class="card-tag">Non-Veg</span>
+<span class="card-tag">High Protein</span>
+</div>
+<div class="card-meta">
+<span>480 kcal</span>
+<span>30 min</span>
+</div>
+<div class="card-footer">
+<span class="card-price">₹179</span>
+<button class="btn btn-primary btn-sm" type="button" data-add-to-cart data-id="meal-chicken-thali" data-name="Chicken Curry Thali" data-price="179">Add</button>
+</div>
+</div>
+</article>
+
+<article class="card menu-card reveal" data-category="veg light">
+<div class="card-image card-image--light">
+<svg class="meal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M15,45 a35,35 0 0 0 70,0 z" fill="var(--color-steel-light)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<ellipse cx="50" cy="45" rx="35" ry="8" fill="var(--color-steel)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<g class="thali-steam" transform="translate(50,35)">
+<path class="steam-line" d="M-10,25 C -18,10 -2,2 -10,-12" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M2,28 C -6,13 10,5 2,-9" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,25 C 6,10 22,2 14,-12" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+<div class="card-body">
+<h3 class="card-title">Dal Khichdi Bowl</h3>
+<p class="card-description">Comfort moong dal khichdi with ghee, papad and pickle.</p>
+<div class="card-tags">
+<span class="card-tag">Veg</span>
+<span class="card-tag">Light</span>
+</div>
+<div class="card-meta">
+<span>310 kcal</span>
+<span>20 min</span>
+</div>
+<div class="card-footer">
+<span class="card-price">₹119</span>
+<button class="btn btn-primary btn-sm" type="button" data-add-to-cart data-id="meal-khichdi-bowl" data-name="Dal Khichdi Bowl" data-price="119">Add</button>
+</div>
+</div>
+</article>
+
+<article class="card menu-card reveal" data-category="non-veg high-protein">
+<div class="card-image card-image--non-veg">
+<svg class="meal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M15,45 a35,35 0 0 0 70,0 z" fill="var(--color-steel-light)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<ellipse cx="50" cy="45" rx="35" ry="8" fill="var(--color-steel)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<g class="thali-steam" transform="translate(50,35)">
+<path class="steam-line" d="M-10,25 C -18,10 -2,2 -10,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M2,28 C -6,13 10,5 2,-9" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,25 C 6,10 22,2 14,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+<div class="card-body">
+<h3 class="card-title">Egg Bhurji Combo</h3>
+<p class="card-description">Spiced egg bhurji, multigrain roti and cucumber salad.</p>
+<div class="card-tags">
+<span class="card-tag">Non-Veg</span>
+<span class="card-tag">High Protein</span>
+</div>
+<div class="card-meta">
+<span>360 kcal</span>
+<span>18 min</span>
+</div>
+<div class="card-footer">
+<span class="card-price">₹139</span>
+<button class="btn btn-primary btn-sm" type="button" data-add-to-cart data-id="meal-egg-bhurji" data-name="Egg Bhurji Combo" data-price="139">Add</button>
+</div>
+</div>
+</article>
+
+<article class="card menu-card reveal" data-category="veg light high-protein">
+<div class="card-image card-image--light">
+<svg class="meal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M15,45 a35,35 0 0 0 70,0 z" fill="var(--color-steel-light)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<ellipse cx="50" cy="45" rx="35" ry="8" fill="var(--color-steel)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<g class="thali-steam" transform="translate(50,35)">
+<path class="steam-line" d="M-10,25 C -18,10 -2,2 -10,-12" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M2,28 C -6,13 10,5 2,-9" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,25 C 6,10 22,2 14,-12" fill="none" stroke="var(--color-steel-dark)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+<div class="card-body">
+<h3 class="card-title">Sprouts &amp; Salad Bowl</h3>
+<p class="card-description">Sprouted moong, boiled egg whites, peanuts and lemon dressing.</p>
+<div class="card-tags">
+<span class="card-tag">Veg</span>
+<span class="card-tag">Light</span>
+</div>
+<div class="card-meta">
+<span>240 kcal</span>
+<span>10 min</span>
+</div>
+<div class="card-footer">
+<span class="card-price">₹99</span>
+<button class="btn btn-primary btn-sm" type="button" data-add-to-cart data-id="meal-sprouts-bowl" data-name="Sprouts &amp; Salad Bowl" data-price="99">Add</button>
+</div>
+</div>
+</article>
+
+<article class="card menu-card reveal" data-category="veg">
+<div class="card-image card-image--veg">
+<svg class="meal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M15,45 a35,35 0 0 0 70,0 z" fill="var(--color-steel-light)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<ellipse cx="50" cy="45" rx="35" ry="8" fill="var(--color-steel)" stroke="var(--color-steel-dark)" stroke-width="2" />
+<g class="thali-steam" transform="translate(50,35)">
+<path class="steam-line" d="M-10,25 C -18,10 -2,2 -10,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M2,28 C -6,13 10,5 2,-9" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+<path class="steam-line" d="M14,25 C 6,10 22,2 14,-12" fill="none" stroke="var(--color-white)" stroke-width="3" stroke-linecap="round" />
+</g>
+</svg>
+</div>
+<div class="card-body">
+<h3 class="card-title">Rajma Chawal Deluxe</h3>
+<p class="card-description">Punjabi rajma, steamed rice, roti, papad and curd.</p>
+<div class="card-tags">
+<span class="card-tag">Veg</span>
+</div>
+<div class="card-meta">
+<span>390 kcal</span>
+<span>22 min</span>
+</div>
+<div class="card-footer">
+<span class="card-price">₹139</span>
+<button class="btn btn-primary btn-sm" type="button" data-add-to-cart data-id="meal-rajma-chawal" data-name="Rajma Chawal Deluxe" data-price="139">Add</button>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- ==========================================================================
+     WHY US
+     ========================================================================== -->
+
+<section class="section" id="why-us">
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">Why Students Choose Us</span>
+<h2>Built for exam season, not just meal time.</h2>
+</div>
+
+<div class="grid grid-3">
+
+<div class="card feature-card reveal" id="exam-fuel">
+<h3 class="card-title">Exam Fuel</h3>
+<p class="card-description">Light, brain-friendly meals timed around test days so you're never sluggish before a paper.</p>
+</div>
+
+<div class="card feature-card reveal" id="high-protein">
+<h3 class="card-title">High Protein Meals</h3>
+<p class="card-description">Protein-forward thalis and bowls that keep you full through long study sessions.</p>
+</div>
+
+<div class="card feature-card reveal">
+<h3 class="card-title">Zero-Delay Delivery</h3>
+<p class="card-description">Delivered to your hostel gate in fixed time slots — no waiting around between classes.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ==========================================================================
+     SUBSCRIPTION PLANS
+     ========================================================================== -->
+
+<section class="section" id="subscription">
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">Subscription Plans</span>
+<h2>Pick a plan, skip the mess line.</h2>
+</div>
+
+<div class="grid grid-3">
+
+<div class="card plan-card reveal">
+<span class="label">Basic</span>
+<p class="card-price">₹2,999<span class="small"> / month</span></p>
+<p class="card-description">1 meal a day, pick lunch or dinner. Pause anytime.</p>
+<a href="#" class="btn btn-outline btn-block">Choose Basic</a>
+</div>
+
+<div class="card plan-card active reveal">
+<span class="card-badge">Most Popular</span>
+<span class="label">Popular</span>
+<p class="card-price">₹4,999<span class="small"> / month</span></p>
+<p class="card-description">2 meals a day — lunch and dinner, delivered daily.</p>
+<a href="#" class="btn btn-primary btn-block">Choose Popular</a>
+</div>
+
+<div class="card plan-card reveal">
+<span class="label">Family</span>
+<p class="card-price">₹6,999<span class="small"> / month</span></p>
+<p class="card-description">3 meals a day plus weekly fruit and snack box.</p>
+<a href="#" class="btn btn-outline btn-block">Choose Family</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ==========================================================================
+     KITCHEN / PROOF
+     ========================================================================== -->
+
+<section class="proof" id="kitchen">
+<div class="container proof-grid">
+
+<div class="proof-content reveal">
+<span class="label">Our Kitchen</span>
+<h2>Cooked fresh, hygienically, every single day.</h2>
+<p class="lead">No preservatives, no reheated leftovers — every thali is cooked the same morning it's delivered, in FSSAI-certified kitchens.</p>
+
+<ul class="proof-list">
+<li><span class="proof-icon">✓</span> FSSAI certified kitchens</li>
+<li><span class="proof-icon">✓</span> Daily hygiene audits</li>
+<li><span class="proof-icon">✓</span> No preservatives, cooked same-day</li>
+</ul>
+
+<div class="kitchen-status">
+<span class="status-dot" data-status-dot></span>
+<span data-status-text>Checking kitchen status…</span>
+</div>
+</div>
+
+<div class="proof-stats reveal">
+<div class="proof-stat">
+<span class="proof-stat-value">3</span>
+<span class="proof-stat-label">FSSAI Kitchens</span>
+</div>
+<div class="proof-stat">
+<span class="proof-stat-value">10K+</span>
+<span class="proof-stat-label">Meals / Month</span>
+</div>
+<div class="proof-stat">
+<span class="proof-stat-value">4.8★</span>
+<span class="proof-stat-label">Avg Rating</span>
+</div>
+<div class="proof-stat">
+<span class="proof-stat-value">100%</span>
+<span class="proof-stat-label">Hygiene Checks</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ==========================================================================
+     PARENT TRUST
+     ========================================================================== -->
+
+<section class="trust" id="parent-trust">
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">Parents Trust Us</span>
+<h2>Because a full tiffin means one less worry.</h2>
+</div>
+
+<div class="trust-grid">
+
+<div class="trust-card reveal">
+<span class="trust-icon" aria-hidden="true">✓</span>
+<h3>Delivery Updates</h3>
+<p class="card-description">Parents get a WhatsApp confirmation every time a meal is delivered.</p>
+</div>
+
+<div class="trust-card reveal">
+<span class="trust-icon" aria-hidden="true">✓</span>
+<h3>Flexible Pausing</h3>
+<p class="card-description">Going home for a break? Pause the subscription in one tap, no penalty.</p>
+</div>
+
+<div class="trust-card reveal">
+<span class="trust-icon" aria-hidden="true">✓</span>
+<h3>Direct Support Line</h3>
+<p class="card-description">A real person answers — for both students and parents — every day, 8am–9pm.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ==========================================================================
+     REVIEWS
+     ========================================================================== -->
+
+<section class="section" id="reviews">
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">Reviews</span>
+<h2>What students are saying</h2>
+</div>
+
+<div class="grid grid-3">
+
+<div class="card review-card reveal">
+<div class="card-rating">★★★★★</div>
+<p class="card-description">"Honestly saved my JEE drop year. I never had to think about food during mock test weeks."</p>
+<p class="small">— Aarav, Vigyan Nagar</p>
+</div>
+
+<div class="card review-card reveal">
+<div class="card-rating">★★★★★</div>
+<p class="card-description">"My mother checks the delivery updates every day. She's more relaxed knowing I'm eating on time."</p>
+<p class="small">— Priya, Talwandi</p>
+</div>
+
+<div class="card review-card reveal">
+<div class="card-rating">★★★★☆</div>
+<p class="card-description">"The high protein thali after gym is genuinely good — not the usual hostel mess food."</p>
+<p class="small">— Rohan, Mahaveer Nagar</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ==========================================================================
+     DELIVERY
+     ========================================================================== -->
+
+<section class="section" id="delivery">
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">Delivery</span>
+<h2>We deliver across Kota's coaching hubs</h2>
+</div>
+
+<div class="delivery-zones reveal" role="list" aria-label="Delivery zones">
+<span class="chip" role="listitem">Vigyan Nagar</span>
+<span class="chip" role="listitem">Talwandi</span>
+<span class="chip" role="listitem">Rajeev Gandhi Nagar</span>
+<span class="chip" role="listitem">Mahaveer Nagar</span>
+<span class="chip" role="listitem">Indra Vihar</span>
+<span class="chip" role="listitem">Jawahar Nagar</span>
+</div>
+
+</div>
+</section>
+
+<!-- ==========================================================================
+     FAQ
+     ========================================================================== -->
+
+<section class="section" id="faq">
+<div class="container">
+
+<div class="section-title reveal">
+<span class="label">FAQ</span>
+<h2>Questions, answered</h2>
+</div>
+
+<div class="faq-list reveal">
+
+<details class="faq-item">
+<summary>What time is the daily order cutoff?</summary>
+<p>Orders for the next day close at 8:00 PM. The countdown on the Today's Special section always shows exactly how much time is left.</p>
+</details>
+
+<details class="faq-item">
+<summary>Do you deliver to my hostel or PG?</summary>
+<p>We currently deliver across Vigyan Nagar, Talwandi, Rajeev Gandhi Nagar, Mahaveer Nagar, Indra Vihar and Jawahar Nagar. Message us on WhatsApp to confirm your exact address.</p>
+</details>
+
+<details class="faq-item">
+<summary>Can I pause my subscription during a break?</summary>
+<p>Yes — pause anytime from your account with no penalty, and resume whenever you're back.</p>
+</details>
+
+<details class="faq-item">
+<summary>How do I place an order?</summary>
+<p>Add meals to your cart and tap "Order on WhatsApp" — it opens a prefilled message to our team so you can confirm in seconds.</p>
+</details>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+
+<footer class="site-footer">
+<div class="container footer-grid">
+
+<div class="footer-brand">
+<a href="/" class="logo">
+<div class="logo-mark">TKF</div>
+<div class="logo-text">
+<span class="logo-title">The Kota Factory</span>
+<span class="logo-subtitle">Fresh Meals. Every Day.</span>
+</div>
+</a>
+<p>Home-style meals delivered to Kota's coaching hostels and PGs, every single day.</p>
+</div>
+
+<div class="footer-col">
+<h4>Explore</h4>
+<a href="#featured-meals">Menu</a>
+<a href="#subscription">Plans</a>
+<a href="#reviews">Reviews</a>
+<a href="#faq">FAQ</a>
+</div>
+
+<div class="footer-col">
+<h4>Support</h4>
+<a href="#delivery">Delivery Zones</a>
+<a href="tel:+918104515987">Call Us</a>
+<a href="https://wa.me/918104515987" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<div class="footer-col">
+<h4>Contact</h4>
+<p>Vigyan Nagar, Kota, Rajasthan</p>
+<p>hello@thekotafactory.in</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<div class="container footer-bottom-inner">
+<span>© 2026 The Kota Factory. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<!-- ==========================================================================
+     CART
+     ========================================================================== -->
+
+<button class="cart-fab" id="cart-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="cart-drawer" aria-label="Open cart">
+<span class="cart-fab-icon" aria-hidden="true">🛒</span>
+<span class="cart-fab-count" data-cart-count>0</span>
+</button>
+
+<div class="cart-overlay" data-cart-overlay hidden></div>
+
+<div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Your cart" aria-hidden="true">
+<div class="cart-drawer-header">
+<h2>Your Cart</h2>
+<button class="cart-close" type="button" aria-label="Close cart">&times;</button>
+</div>
+
+<ul class="cart-items" data-cart-items></ul>
+<p class="cart-empty" data-cart-empty>Your cart is empty. Add a meal to get started!</p>
+
+<div class="cart-footer">
+<div class="cart-total-row">
+<span>Total</span>
+<span data-cart-total>₹0</span>
+</div>
+<button class="btn btn-primary btn-block" type="button" data-cart-checkout disabled>
+<span class="cart-checkout-label">Order on WhatsApp</span>
+</button>
+</div>
+</div>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

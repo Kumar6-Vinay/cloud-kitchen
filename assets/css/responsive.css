@@ -1,0 +1,38 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Responsive (cross-cutting)
+   ========================================================================== */
+
+@media (max-width:576px) {
+
+    .hero-blob {
+
+        display: none;
+
+    }
+
+    .trust-icon {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: var(--text-xl);
+
+    }
+
+    .proof-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (max-width:400px) {
+
+    .hero-badge--special {
+
+        left: 0;
+
+    }
+}

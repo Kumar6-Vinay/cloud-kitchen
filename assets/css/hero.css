@@ -1,0 +1,247 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Hero
+   ========================================================================== */
+
+.hero {
+
+    position: relative;
+
+    padding-top: calc(var(--navbar-height) + var(--space-9));
+
+    padding-bottom: var(--space-9);
+
+    overflow: hidden;
+
+    background-image: var(--gradient-hero);
+
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: var(--space-8);
+
+    align-items: center;
+
+}
+
+.hero-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: var(--space-5);
+
+}
+
+.hero-actions {
+
+    display: flex;
+
+    gap: var(--space-4);
+
+    flex-wrap: wrap;
+
+}
+
+.hero-stats {
+
+    display: flex;
+
+    gap: var(--space-7);
+
+    margin-top: var(--space-2);
+
+}
+
+.hero-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+}
+
+.hero-stat-value {
+
+    font-family: var(--font-heading);
+
+    font-size: var(--text-2xl);
+
+    font-weight: var(--weight-extrabold);
+
+    color: var(--color-primary);
+
+}
+
+.hero-stat-label {
+
+    font-size: var(--text-xs);
+
+    color: var(--color-text-muted);
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+}
+
+/* ==========================================================================
+   ILLUSTRATION
+   ========================================================================== */
+
+.hero-illustration {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.hero-blob {
+
+    position: absolute;
+
+    z-index: -1;
+
+    width: 340px;
+
+    height: 340px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--gradient-accent);
+
+    opacity: .15;
+
+    filter: blur(70px);
+
+}
+
+.thali-wrap {
+
+    position: relative;
+
+    width: min(420px, 90%);
+
+    aspect-ratio: 1;
+
+}
+
+.thali {
+
+    width: 100%;
+
+    height: 100%;
+
+    filter: drop-shadow(var(--shadow-lg));
+
+}
+
+/* ==========================================================================
+   FLOATING BADGES
+   ========================================================================== */
+
+.hero-badge {
+
+    position: absolute;
+
+    z-index: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-2);
+
+    padding: var(--space-2) var(--space-4);
+
+    border-radius: var(--radius-pill);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-md);
+
+    font-size: var(--text-sm);
+
+    font-weight: var(--weight-semibold);
+
+    white-space: nowrap;
+
+    color: var(--color-text);
+
+}
+
+.hero-badge--rating {
+
+    top: 6%;
+
+    right: 0;
+
+}
+
+.hero-badge--special {
+
+    bottom: 8%;
+
+    left: -4%;
+
+    color: var(--color-primary);
+
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width:992px) {
+
+    .hero-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-illustration {
+
+        order: -1;
+
+    }
+
+    .hero {
+
+        padding-top: calc(var(--navbar-height) + var(--space-7));
+
+        padding-bottom: var(--space-7);
+
+    }
+
+    .thali-wrap {
+
+        width: min(320px, 80%);
+
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .hero-badge {
+
+        font-size: var(--text-xs);
+
+        padding: var(--space-1) var(--space-3);
+
+    }
+}

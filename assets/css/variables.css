@@ -198,6 +198,54 @@
 
   --z-toast: 1200;
 
+  /* ==========================================================================
+     STEEL THALI ILLUSTRATION
+     ========================================================================== */
+
+  --color-steel-light: #F1F3F5;
+
+  --color-steel: #D3D8DE;
+
+  --color-steel-dark: #9AA4B2;
+
+  --color-steel-shadow: #6B7684;
+
+  --color-dal: #E0A945;
+
+  --color-sabzi: #4C8C58;
+
+  --color-rice: #FFF9EE;
+
+  --color-roti: #E8C48E;
+
+  --color-pickle: #C0392B;
+
+  --color-pickle-dark: #8B1E14;
+
+  /* ==========================================================================
+     GRADIENTS
+     ========================================================================== */
+
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+
+  --gradient-steel: linear-gradient(180deg, var(--color-steel-light), var(--color-steel));
+
+  --gradient-hero: radial-gradient(circle at 80% 20%, rgba(249,115,22,.12), transparent 55%);
+
+  /* ==========================================================================
+     MOTION DURATIONS
+     ========================================================================== */
+
+  --duration-steam: 3.2s;
+
+  --duration-reveal: .7s;
+
+  --duration-pulse: 2.2s;
+
+  --duration-tick: .4s;
+
 }
 
 /* ==========================================================================

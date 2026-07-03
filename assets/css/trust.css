@@ -1,0 +1,62 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Parent Trust
+   ========================================================================== */
+
+.trust {
+
+    padding-block: var(--space-9);
+}
+
+.trust-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-6);
+}
+
+.trust-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: var(--space-3);
+
+    padding: var(--space-6);
+
+    text-align: center;
+}
+
+.trust-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 56px;
+
+    height: 56px;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--gradient-primary);
+
+    font-size: var(--text-2xl);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width:768px) {
+
+    .trust-grid {
+
+        grid-template-columns: 1fr;
+    }
+}

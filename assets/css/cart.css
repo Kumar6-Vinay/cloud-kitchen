@@ -1,0 +1,350 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Cart
+   ========================================================================== */
+
+/* ==========================================================================
+   FLOATING BUTTON
+   ========================================================================== */
+
+.cart-fab {
+
+    position: fixed;
+
+    right: var(--space-6);
+
+    bottom: var(--space-6);
+
+    z-index: var(--z-toast);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--gradient-primary);
+
+    color: var(--color-white);
+
+    box-shadow: var(--shadow-lg);
+
+    cursor: pointer;
+
+}
+
+.cart-fab:focus-visible {
+
+    outline: 3px solid var(--color-highlight);
+
+    outline-offset: 3px;
+
+}
+
+.cart-fab-icon {
+
+    font-size: var(--text-xl);
+
+}
+
+.cart-fab-count {
+
+    position: absolute;
+
+    top: -4px;
+
+    right: -4px;
+
+    min-width: 22px;
+
+    height: 22px;
+
+    padding-inline: 4px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--color-accent);
+
+    color: var(--color-white);
+
+    font-size: var(--text-xs);
+
+    font-weight: var(--weight-bold);
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+/* ==========================================================================
+   OVERLAY
+   ========================================================================== */
+
+.cart-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: var(--z-modal);
+
+    background: rgba(0,0,0,.4);
+
+}
+
+/* ==========================================================================
+   DRAWER
+   ========================================================================== */
+
+.cart-drawer {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    z-index: calc(var(--z-modal) + 1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: min(400px, 100%);
+
+    padding: var(--space-6);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-xl);
+
+    transform: translateX(100%);
+
+}
+
+.cart-drawer.is-open {
+
+    transform: translateX(0);
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    .cart-drawer {
+
+        transition: transform var(--transition-normal);
+
+    }
+}
+
+.cart-drawer-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: var(--space-5);
+
+}
+
+.cart-close {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: var(--radius-md);
+
+    font-size: var(--text-xl);
+
+    color: var(--color-text-muted);
+
+}
+
+.cart-close:hover {
+
+    background: var(--color-surface-secondary);
+
+}
+
+/* ==========================================================================
+   ITEMS
+   ========================================================================== */
+
+.cart-items {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    overflow-y: auto;
+
+    flex: 1;
+
+}
+
+.cart-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-3);
+
+    padding-bottom: var(--space-4);
+
+    border-bottom: 1px solid var(--color-divider);
+
+}
+
+.cart-item-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+}
+
+.cart-item-name {
+
+    font-weight: var(--weight-semibold);
+
+    font-size: var(--text-sm);
+
+}
+
+.cart-item-price {
+
+    color: var(--color-primary);
+
+    font-weight: var(--weight-bold);
+
+    font-size: var(--text-sm);
+
+}
+
+.cart-item-qty {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-2);
+
+}
+
+.cart-item-qty button {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--color-surface-secondary);
+
+    font-weight: var(--weight-bold);
+
+}
+
+.cart-item-remove {
+
+    color: var(--color-text-light);
+
+    font-size: var(--text-lg);
+
+}
+
+.cart-item-remove:hover {
+
+    color: var(--color-danger);
+
+}
+
+.cart-empty {
+
+    color: var(--color-text-muted);
+
+    text-align: center;
+
+    padding-block: var(--space-6);
+
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.cart-footer {
+
+    padding-top: var(--space-4);
+
+    border-top: 1px solid var(--color-divider);
+
+}
+
+.cart-total-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-weight: var(--weight-bold);
+
+    font-size: var(--text-lg);
+
+    margin-bottom: var(--space-4);
+
+}
+
+.cart-checkout-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: var(--space-2);
+
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width:576px) {
+
+    .cart-fab {
+
+        right: var(--space-4);
+
+        bottom: var(--space-4);
+
+    }
+}
