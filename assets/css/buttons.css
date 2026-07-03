@@ -1,0 +1,231 @@
+/* ==========================================================================
+   THE KOTA FACTORY
+   Button System
+   ========================================================================== */
+
+/* ==========================================================================
+   BASE BUTTON
+   ========================================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+
+    height: var(--button-height);
+
+    padding-inline: 2rem;
+
+    border: none;
+    border-radius: var(--button-radius);
+
+    cursor: pointer;
+
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+
+    text-decoration: none;
+
+    transition:
+        transform var(--transition-fast),
+        background var(--transition-fast),
+        color var(--transition-fast),
+        box-shadow var(--transition-fast);
+
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   PRIMARY
+   ========================================================================== */
+
+.btn-primary {
+
+    background: var(--color-primary);
+
+    color: var(--color-white);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.btn-primary:hover {
+
+    background: var(--color-primary-dark);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.btn-primary:active {
+
+    transform: translateY(0);
+
+}
+
+/* ==========================================================================
+   SECONDARY
+   ========================================================================== */
+
+.btn-secondary {
+
+    background: var(--color-white);
+
+    color: var(--color-primary);
+
+    border: 1px solid var(--color-border);
+
+}
+
+.btn-secondary:hover {
+
+    background: var(--color-surface-secondary);
+
+    transform: translateY(-3px);
+
+}
+
+/* ==========================================================================
+   OUTLINE
+   ========================================================================== */
+
+.btn-outline {
+
+    border: 2px solid var(--color-primary);
+
+    background: transparent;
+
+    color: var(--color-primary);
+
+}
+
+.btn-outline:hover {
+
+    background: var(--color-primary);
+
+    color: var(--color-white);
+
+}
+
+/* ==========================================================================
+   GHOST
+   ========================================================================== */
+
+.btn-ghost {
+
+    background: transparent;
+
+    color: var(--color-text);
+
+}
+
+.btn-ghost:hover {
+
+    background: rgba(0,0,0,.05);
+
+}
+
+/* ==========================================================================
+   ORANGE CTA
+   ========================================================================== */
+
+.btn-accent {
+
+    background: var(--color-accent);
+
+    color: var(--color-white);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.btn-accent:hover {
+
+    background: var(--color-accent-light);
+
+    transform: translateY(-3px);
+
+}
+
+/* ==========================================================================
+   SMALL
+   ========================================================================== */
+
+.btn-sm {
+
+    height: 42px;
+
+    padding-inline: 1rem;
+
+    font-size: var(--text-sm);
+
+}
+
+/* ==========================================================================
+   LARGE
+   ========================================================================== */
+
+.btn-lg {
+
+    height: 64px;
+
+    padding-inline: 2.5rem;
+
+    font-size: var(--text-lg);
+
+}
+
+/* ==========================================================================
+   FULL WIDTH
+   ========================================================================== */
+
+.btn-block {
+
+    width: 100%;
+
+}
+
+/* ==========================================================================
+   ICON
+   ========================================================================== */
+
+.btn-icon {
+
+    width: 56px;
+
+    height: 56px;
+
+    padding: 0;
+
+}
+
+/* ==========================================================================
+   DISABLED
+   ========================================================================== */
+
+.btn:disabled {
+
+    opacity: .5;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+/* ==========================================================================
+   FOCUS
+   ========================================================================== */
+
+.btn:focus-visible {
+
+    outline: 3px solid var(--color-highlight);
+
+    outline-offset: 4px;
+
+}
